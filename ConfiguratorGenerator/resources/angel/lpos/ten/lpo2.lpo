@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+     <lpo id="net012.lpo" type="http://www.pnml.org/version-2009/grammar/ptnet">
+          <name>
+               <value>net012.lpo</value>
+          </name>
+          <event id="viptool.lpo.datastructure.LPOEvent@1757809942">
+               <name>
+                    <value>M</value>
+                    <graphics>
+                         <offset x="5" y="23"/>
+                    </graphics>
+               </name>
+               <graphics>
+                    <position x="942" y="42"/>
+               </graphics>
+          </event>
+          <event id="viptool.lpo.datastructure.LPOEvent@830237416">
+               <name>
+                    <value>A</value>
+                    <graphics>
+                         <offset x="5" y="23"/>
+                    </graphics>
+               </name>
+               <graphics>
+                    <position x="192" y="42"/>
+               </graphics>
+          </event>
+          <event id="viptool.lpo.datastructure.LPOEvent@1959979238">
+               <name>
+                    <value>N</value>
+                    <graphics>
+                         <offset x="5" y="23"/>
+                    </graphics>
+               </name>
+               <graphics>
+                    <position x="792" y="42"/>
+               </graphics>
+          </event>
+          <event id="viptool.lpo.datastructure.LPOEvent@2010126709">
+               <name>
+                    <value>D</value>
+                    <graphics>
+                         <offset x="5" y="23"/>
+                    </graphics>
+               </name>
+               <graphics>
+                    <position x="1242" y="42"/>
+               </graphics>
+          </event>
+          <event id="viptool.lpo.datastructure.LPOEvent@56716663">
+               <name>
+                    <value>C</value>
+                    <graphics>
+                         <offset x="5" y="23"/>
+                    </graphics>
+               </name>
+               <graphics>
+                    <position x="342" y="42"/>
+               </graphics>
+          </event>
+          <event id="viptool.lpo.datastructure.LPOEvent@1830297918">
+               <name>
+                    <value>E</value>
+                    <graphics>
+                         <offset x="5" y="23"/>
+                    </graphics>
+               </name>
+               <graphics>
+                    <position x="492" y="42"/>
+               </graphics>
+          </event>
+          <event id="viptool.lpo.datastructure.LPOEvent@750896959">
+               <name>
+                    <value>L</value>
+                    <graphics>
+                         <offset x="5" y="22"/>
+                    </graphics>
+               </name>
+               <graphics>
+                    <position x="642" y="42"/>
+               </graphics>
+          </event>
+          <event id="viptool.lpo.datastructure.LPOEvent@446237031">
+               <name>
+                    <value>F</value>
+                    <graphics>
+                         <offset x="5" y="22"/>
+                    </graphics>
+               </name>
+               <graphics>
+                    <position x="1092" y="42"/>
+               </graphics>
+          </event>
+          <event id="viptool.lpo.datastructure.LPOEvent@686348838">
+               <name>
+                    <value>B</value>
+                    <graphics>
+                         <offset x="5" y="23"/>
+                    </graphics>
+               </name>
+               <graphics>
+                    <position x="1392" y="42"/>
+               </graphics>
+          </event>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1632696273"
+               source="viptool.lpo.datastructure.LPOEvent@1959979238" target="viptool.lpo.datastructure.LPOEvent@2010126709">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@470283332"
+               source="viptool.lpo.datastructure.LPOEvent@446237031" target="viptool.lpo.datastructure.LPOEvent@2010126709">
+               <graphics userDrawn="true"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@349719773"
+               source="viptool.lpo.datastructure.LPOEvent@56716663" target="viptool.lpo.datastructure.LPOEvent@2010126709">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1244792948"
+               source="viptool.lpo.datastructure.LPOEvent@56716663" target="viptool.lpo.datastructure.LPOEvent@1757809942">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@727656599"
+               source="viptool.lpo.datastructure.LPOEvent@830237416" target="viptool.lpo.datastructure.LPOEvent@56716663">
+               <graphics userDrawn="true"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@736615726"
+               source="viptool.lpo.datastructure.LPOEvent@1959979238" target="viptool.lpo.datastructure.LPOEvent@446237031">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@639568085"
+               source="viptool.lpo.datastructure.LPOEvent@56716663" target="viptool.lpo.datastructure.LPOEvent@750896959">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1533871207"
+               source="viptool.lpo.datastructure.LPOEvent@750896959" target="viptool.lpo.datastructure.LPOEvent@1959979238">
+               <graphics userDrawn="true"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@837412386"
+               source="viptool.lpo.datastructure.LPOEvent@830237416" target="viptool.lpo.datastructure.LPOEvent@446237031">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@395081856"
+               source="viptool.lpo.datastructure.LPOEvent@1757809942" target="viptool.lpo.datastructure.LPOEvent@686348838">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@299385877"
+               source="viptool.lpo.datastructure.LPOEvent@750896959" target="viptool.lpo.datastructure.LPOEvent@686348838">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@861695570"
+               source="viptool.lpo.datastructure.LPOEvent@1830297918" target="viptool.lpo.datastructure.LPOEvent@686348838">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@297046139"
+               source="viptool.lpo.datastructure.LPOEvent@56716663" target="viptool.lpo.datastructure.LPOEvent@1830297918">
+               <graphics userDrawn="true"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1400172155"
+               source="viptool.lpo.datastructure.LPOEvent@750896959" target="viptool.lpo.datastructure.LPOEvent@446237031">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1237287087"
+               source="viptool.lpo.datastructure.LPOEvent@1757809942" target="viptool.lpo.datastructure.LPOEvent@446237031">
+               <graphics userDrawn="true"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@634146905"
+               source="viptool.lpo.datastructure.LPOEvent@750896959" target="viptool.lpo.datastructure.LPOEvent@2010126709">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1287119713"
+               source="viptool.lpo.datastructure.LPOEvent@830237416" target="viptool.lpo.datastructure.LPOEvent@750896959">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1109231627"
+               source="viptool.lpo.datastructure.LPOEvent@830237416" target="viptool.lpo.datastructure.LPOEvent@686348838">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@533367325"
+               source="viptool.lpo.datastructure.LPOEvent@1830297918" target="viptool.lpo.datastructure.LPOEvent@750896959">
+               <graphics userDrawn="true"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@856028572"
+               source="viptool.lpo.datastructure.LPOEvent@830237416" target="viptool.lpo.datastructure.LPOEvent@2010126709">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1884704393"
+               source="viptool.lpo.datastructure.LPOEvent@1830297918" target="viptool.lpo.datastructure.LPOEvent@446237031">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1316347348"
+               source="viptool.lpo.datastructure.LPOEvent@1757809942" target="viptool.lpo.datastructure.LPOEvent@2010126709">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@320427899"
+               source="viptool.lpo.datastructure.LPOEvent@830237416" target="viptool.lpo.datastructure.LPOEvent@1830297918">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@2136577084"
+               source="viptool.lpo.datastructure.LPOEvent@830237416" target="viptool.lpo.datastructure.LPOEvent@1757809942">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1395003075"
+               source="viptool.lpo.datastructure.LPOEvent@830237416" target="viptool.lpo.datastructure.LPOEvent@1959979238">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1414262316"
+               source="viptool.lpo.datastructure.LPOEvent@56716663" target="viptool.lpo.datastructure.LPOEvent@1959979238">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1330863163"
+               source="viptool.lpo.datastructure.LPOEvent@1959979238" target="viptool.lpo.datastructure.LPOEvent@1757809942">
+               <graphics userDrawn="true"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@17334307"
+               source="viptool.lpo.datastructure.LPOEvent@2010126709" target="viptool.lpo.datastructure.LPOEvent@686348838">
+               <graphics userDrawn="true"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1910503725"
+               source="viptool.lpo.datastructure.LPOEvent@56716663" target="viptool.lpo.datastructure.LPOEvent@446237031">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1117820114"
+               source="viptool.lpo.datastructure.LPOEvent@1830297918" target="viptool.lpo.datastructure.LPOEvent@1757809942">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1179855463"
+               source="viptool.lpo.datastructure.LPOEvent@446237031" target="viptool.lpo.datastructure.LPOEvent@686348838">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1516678291"
+               source="viptool.lpo.datastructure.LPOEvent@1959979238" target="viptool.lpo.datastructure.LPOEvent@686348838">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1726686302"
+               source="viptool.lpo.datastructure.LPOEvent@1830297918" target="viptool.lpo.datastructure.LPOEvent@2010126709">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1891412427"
+               source="viptool.lpo.datastructure.LPOEvent@56716663" target="viptool.lpo.datastructure.LPOEvent@686348838">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@996767889"
+               source="viptool.lpo.datastructure.LPOEvent@750896959" target="viptool.lpo.datastructure.LPOEvent@1757809942">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="viptool.lpo.datastructure.LPOEdge@1883176065"
+               source="viptool.lpo.datastructure.LPOEvent@1830297918" target="viptool.lpo.datastructure.LPOEvent@1959979238">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+     </lpo>
+</pnml>

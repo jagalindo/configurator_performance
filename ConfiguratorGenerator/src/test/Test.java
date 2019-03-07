@@ -1,0 +1,97 @@
+package test;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Scanner;
+
+import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
+import es.us.isa.FAMA.models.FAMAfeatureModel.Feature;
+import es.us.isa.FAMA.models.FAMAfeatureModel.fileformats.SPLXReader;
+import es.us.isa.FAMA.models.FAMAfeatureModel.transformations.AtomicSet;
+import es.us.isa.FAMA.models.featureModel.Product;
+import es.us.isa.FAMA.models.variabilityModel.VariabilityElement;
+import es.us.isa.FAMA.models.variabilityModel.transformations.AtomicSetTransform;
+import es.us.isa.FAMA.stagedConfigManager.Configuration;
+import es.us.isa.Sat4jReasoner.Sat4jReasoner;
+import es.us.isa.Sat4jReasoner.questions.Sat4jValidConfigurationQuestion;
+import es.us.isa.Sat4jReasoner.questions.Sat4jValidProductQuestion;
+
+public class Test {
+
+	static final String configurationsPath = "C:\\Users\\malawito\\Documents\\Workspaces\\ConfiguratorsPerformance\\ConfiguratorGenerator\\configurator\\ERP-System\\configurations.csv";
+
+	public static void main(String[] args) throws Exception {
+
+		PrintWriter out = new PrintWriter("result.csv");
+		PrintWriter atom = new PrintWriter("atomic.csv");
+
+		SPLXReader reader = new SPLXReader();
+		FAMAFeatureModel fm = (FAMAFeatureModel) reader.parseFile("./configurator/ERP-System/ERP-System.xml");
+		AtomicSetTransform as = new AtomicSet();
+		as.doTransform(fm);
+		Map<String, Collection<VariabilityElement>> atomicSets = as.getAtomicSets();
+		
+		for(Entry<String, Collection<VariabilityElement>> atomicSet: atomicSets.entrySet()) {
+			if(atomicSet.getValue().size()>1) {
+				for(VariabilityElement e:atomicSet.getValue()) {
+					atom.print(e.getName()+";");
+				}
+				atom.println();
+			}
+		}
+		atom.close();
+		
+		Collection<Configuration> configurations = readConfigurations();
+		Sat4jReasoner r = new Sat4jReasoner();
+		fm.transformTo(r);
+
+		for (Configuration c : configurations) {
+			Sat4jValidConfigurationQuestion cvq = new Sat4jValidConfigurationQuestion();
+			cvq.setConfiguration(c);
+			r.ask(cvq);
+
+			Sat4jValidProductQuestion cvprod = new Sat4jValidProductQuestion();
+			Product p = c.getConfigurationAsProduct();
+			cvprod.setProduct(p);
+
+			r.ask(cvprod);
+
+			out.println(p.getElements() + "|" + cvq.isValid() + "|" + cvprod.isValid());
+			out.flush();
+		}
+		out.close();
+	}
+
+	public static Collection<Configuration> readConfigurations() {
+		Map<String, Configuration> allUserConf = new HashMap<String, Configuration>();
+
+		try {
+			Scanner scanner = new Scanner(new File(configurationsPath));
+			while (scanner.hasNextLine()) {
+				String line = scanner.nextLine();
+				String user = line.substring(0, line.indexOf(";"));
+				String feature = line.substring(line.indexOf(";") + 1);
+
+				Configuration userconfigurations = allUserConf.get(user);
+				if (userconfigurations == null) {
+					userconfigurations = new Configuration();
+				}
+				userconfigurations.addElement(new Feature(feature), 1);
+				allUserConf.put(user, userconfigurations);
+
+				// System.out.println(user+";"+feature);
+			}
+			scanner.close();
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		return allUserConf.values();
+	}
+
+}

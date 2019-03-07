@@ -1,0 +1,16 @@
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.recommenders.calls.rcp.proposalCategory.templates\u0000org.eclipse.mylyn.java.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.recommenders.chain.rcp.proposalCategory.chain\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.RandomAccess"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="PetriNet.PlacePetriNet"/><rhs name\="PetriNet.TransitionPetriNet"/><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractCollection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.ArrayList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="es.us.isa.FAMA.models.variabilityModel.parsers.IReader"><rhs name\="es.us.isa.FAMA.models.FAMAfeatureModel.fileformats.SPLXReader"/></lhs><lhs name\="es.us.isa.FAMA.models.FAMAfeatureModel.fileformats.SPLXReader"><rhs name\="es.us.isa.FAMA.models.FAMAfeatureModel.fileformats.SPLXReader"/></lhs><lhs name\="us.es.idea.pnml.lpo.Pnml"><rhs name\="us.es.idea.pnml.lpo.Pnml"/></lhs><lhs name\="us.es.idea.pnml.lpo.Pnml$Lpo"><rhs name\="us.es.idea.pnml.lpo.Pnml$Lpo"/></lhs><lhs name\="PetriNet.PlacePetriNet"><rhs name\="PetriNet.PlacePetriNet"/></lhs><lhs name\="PetriNet.TransitionPetriNet"><rhs name\="PetriNet.TransitionPetriNet"/></lhs><lhs name\="us.es.idea.pnml.Pnml"><rhs name\="us.es.idea.pnml.Pnml"/></lhs><lhs name\="us.es.idea.pnml.Pnml$Net$Arc"><rhs name\="us.es.idea.pnml.Pnml$Net$Arc"/></lhs><lhs name\="us.es.idea.pnml.Pnml$Net$Place"><rhs name\="us.es.idea.pnml.Pnml$Net$Place"/></lhs><lhs name\="TraceXMLGenerator"><rhs name\="TraceXMLGenerator"/></lhs><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="es.us.isa.FAMA.models.variabilityModel.transformations.IVariabilityModelTransform"><rhs name\="es.us.isa.FAMA.models.FAMAfeatureModel.transformations.AtomicSet"/></lhs><lhs name\="es.us.isa.FAMA.models.variabilityModel.transformations.AtomicSetTransform"><rhs name\="es.us.isa.FAMA.models.FAMAfeatureModel.transformations.AtomicSet"/></lhs></history>
+content_assist_number_of_computers=19
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=14
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

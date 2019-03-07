@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.nio.file.attribute.UserPrincipalLookupService"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.fileformats.SPLXReader"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.OrderingHeuristics.OrderingHeuristic"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="us.es.idea.pnml.lpo.ObjectFactory"/>
+<fullyQualifiedTypeName name="PetriNet.LPO.PetriNetLpo"/>
+<fullyQualifiedTypeName name="us.es.idea.pnml.lpo.Pnml.Lpo.Name"/>
+<fullyQualifiedTypeName name="us.es.idea.pnml.lpo.Pnml"/>
+<fullyQualifiedTypeName name="us.es.idea.pnml.lpo.Pnml.Lpo"/>
+<fullyQualifiedTypeName name="PetriNet.PlacePetriNet"/>
+<fullyQualifiedTypeName name="PetriNet.TransitionPetriNet"/>
+<fullyQualifiedTypeName name="fr.lip6.move.pnml.hlpn.hlcorestructure.Arc"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="PetriNet.LPO.EventLpo"/>
+<fullyQualifiedTypeName name="us.es.idea.pnml.lpo.Pnml.Lpo.LpoArc"/>
+<fullyQualifiedTypeName name="java.net.NetPermission"/>
+<fullyQualifiedTypeName name="us.es.idea.pnml.Pnml.Net.Arc"/>
+<fullyQualifiedTypeName name="us.es.idea.pnml.Pnml"/>
+<fullyQualifiedTypeName name="us.es.idea.pnml.Pnml.Net.Place"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.Feature"/>
+<fullyQualifiedTypeName name="org.w3c.dom.Element"/>
+<fullyQualifiedTypeName name="TraceXMLGenerator"/>
+<fullyQualifiedTypeName name="es.us.isa.ChocoReasoner.ChocoReasoner"/>
+<fullyQualifiedTypeName name="choco.kernel.model.Model"/>
+<fullyQualifiedTypeName name="choco.Choco"/>
+<fullyQualifiedTypeName name="java.util.concurrent.SynchronousQueue"/>
+<fullyQualifiedTypeName name="es.us.isa.Sat4jReasoner.Sat4jReasoner"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.stagedConfigManager.Configuration"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.models.variabilityModel.transformations.AtomicSetTransform"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.models.FAMAfeatureModel.transformations.AtomicSet"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="es.us.isa.FAMA.models.variabilityModel.VariabilityElement"/>
+</qualifiedTypeNameHistroy>

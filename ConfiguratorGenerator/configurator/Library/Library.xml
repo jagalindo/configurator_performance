@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and abstract="true" mandatory="true" name="Library">
+				<and mandatory="true" name="PolicyManagement">
+					<feature mandatory="true" name="SetupPolicy"/>
+					<feature mandatory="true" name="UpdatePolicy"/>
+					<feature mandatory="true" name="SearchPolicy"/>
+					<feature mandatory="true" name="ReservePolicy"/>
+					<feature mandatory="true" name="BorrowPolicy"/>
+					<feature mandatory="true" name="Membership"/>
+					<or name="TypePolicy">
+						<feature name="FreePolicy"/>
+						<feature name="RewardPolicy"/>
+					</or>
+				</and>
+				<and mandatory="true" name="ItemManagement">
+					<feature mandatory="true" name="AddItem"/>
+					<feature mandatory="true" name="RemoveItem"/>
+					<or mandatory="true" name="Catalog">
+						<feature name="Monograph"/>
+						<feature name="Periodial"/>
+						<feature name="CDVideo"/>
+						<feature name="eBook"/>
+					</or>
+					<feature mandatory="true" name="UpdateItem"/>
+					<or name="StockOrganize">
+						<feature name="ClassificationDefinition"/>
+						<feature name="KeywordDefinition"/>
+						<feature name="DescriptorDefinition"/>
+					</or>
+				</and>
+				<and mandatory="true" name="CustomerManagement">
+					<and mandatory="true" name="Register">
+						<or name="TypeRegister">
+							<feature name="RegistrationFee"/>
+							<feature name="IssueLibraryCard"/>
+						</or>
+						<and mandatory="true" name="PersonalInformation">
+							<feature mandatory="true" name="Name"/>
+							<feature name="PhoneNumber"/>
+							<feature name="Address"/>
+							<feature name="EmailAddress"/>
+						</and>
+					</and>
+					<and mandatory="true" name="RenewMembership">
+						<or name="AddRenew">
+							<feature name="ReplaceLibraryCard"/>
+							<feature name="RenewFee"/>
+						</or>
+					</and>
+					<and mandatory="true" name="UpdateRegistration">
+						<or mandatory="true" name="UpdateDetails">
+							<feature name="UpdatePhoneNo"/>
+							<feature name="UpdateAddress"/>
+							<feature name="UpdateEmailAddress"/>
+						</or>
+						<feature name="BorrowingHistory"/>
+					</and>
+					<feature mandatory="true" name="Unregister"/>
+					<feature name="RewardPoint"/>
+				</and>
+				<and mandatory="true" name="Service">
+					<feature name="ViewAccount"/>
+					<and mandatory="true" name="LoanItem">
+						<or mandatory="true" name="InLibraryLoan">
+							<feature name="FontDesk"/>
+							<feature name="SelfCheck"/>
+						</or>
+						<feature name="LoanFee"/>
+						<and name="RecordCheck">
+							<feature name="PopsUpReminder"/>
+						</and>
+						<feature name="LoanRestriction"/>
+					</and>
+					<and mandatory="true" name="SearchItem">
+						<feature name="WebSearch"/>
+						<feature mandatory="true" name="OnsiteSearch"/>
+					</and>
+					<and mandatory="true" name="ReturnItem">
+						<and mandatory="true" name="Overdue">
+							<feature name="OverdueFee"/>
+						</and>
+						<and mandatory="true" name="DamageOrLoss">
+							<feature name="DamageCost"/>
+						</and>
+					</and>
+					<and mandatory="true" name="ReserveItem">
+						<and mandatory="true" name="PlaceReserve">
+							<feature name="ReserveFee"/>
+							<feature name="OnlineReserve"/>
+						</and>
+						<and mandatory="true" name="CancelReserve">
+							<feature name="OnlineCancel"/>
+						</and>
+					</and>
+					<and mandatory="true" name="Notification">
+						<or mandatory="true" name="NotificationContent">
+							<feature name="OverdueNotification"/>
+							<feature name="ReserveNotification"/>
+							<feature name="NewArrival"/>
+							<feature name="FeeNotification"/>
+						</or>
+						<or mandatory="true" name="NotificationMethods">
+							<feature name="Email"/>
+							<feature name="OnScreen"/>
+							<feature name="Post"/>
+							<feature name="SMS"/>
+						</or>
+					</and>
+					<and name="FeedbackBoard">
+						<feature mandatory="true" name="Mobile"/>
+						<feature mandatory="true" name="Website"/>
+						<feature mandatory="true" name="OnsiteComputer"/>
+					</and>
+					<and name="InterLibrary">
+						<or mandatory="true" name="Loan">
+							<feature name="OnsiteLoan"/>
+							<feature name="WebRequest"/>
+						</or>
+						<alt mandatory="true" name="Search">
+							<feature name="InterLibrarySearch"/>
+							<feature name="ExternalDatabase"/>
+						</alt>
+					</and>
+					<and name="DigitalLibrary">
+						<or mandatory="true" name="TypeLibrary">
+							<feature name="ScienceDirect"/>
+							<feature name="AcademicResearchLibrary"/>
+							<feature name="CSIRO"/>
+							<feature name="Ovid"/>
+							<feature name="EuropaWord"/>
+						</or>
+						<or mandatory="true" name="Data">
+							<feature name="OnSiteExplore"/>
+							<feature name="WebExplore"/>
+							<feature name="OnSitePrint"/>
+							<feature name="Download"/>
+						</or>
+					</and>
+				</and>
+				<and mandatory="true" name="OperatingEnvironment">
+					<or mandatory="true" name="Device">
+						<feature name="LibraryCardDevice"/>
+						<feature name="SelfCheckDevice"/>
+						<feature name="DigitalDevice"/>
+						<feature name="WirelessDevice"/>
+					</or>
+					<and mandatory="true" name="System">
+						<alt mandatory="true" name="Network">
+							<feature name="NonNetwork"/>
+							<or name="NetworkBased">
+								<feature name="LANBased"/>
+								<feature name="InternetBased"/>
+							</or>
+						</alt>
+						<and mandatory="true" name="UserInterface">
+							<feature name="UserWebInterface"/>
+						</and>
+					</and>
+				</and>
+				<and mandatory="true" name="Security">
+					<or name="NetworkSecurity">
+						<feature name="Firewall"/>
+						<feature name="MessageEncryption"/>
+						<feature name="ProxyServer"/>
+					</or>
+					<or mandatory="true" name="Authentication">
+						<feature name="UseLibraryCard"/>
+						<feature name="UsePassword"/>
+						<feature name="UseDigitalCertificate"/>
+					</or>
+				</and>
+				<or name="Payment">
+					<feature name="Cash"/>
+					<feature name="DebitCard"/>
+					<feature name="Cheque"/>
+					<or name="CreditCard">
+						<feature name="Visa"/>
+						<feature name="Master"/>
+						<feature name="AmericanExpress"/>
+					</or>
+				</or>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

@@ -1,0 +1,112 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ConformanceCheckingSPL</groupId>
+  <artifactId>ConformanceCheckingSPL</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <repositories>
+   <repository>
+   <id>central</id>
+   <name>Artifactory-releases</name>
+   <url>http://estigia.lsi.us.es:1681/artifactory/libs-release</url>
+  </repository>
+  </repositories>
+  
+  <properties>
+		<pnml.version>2.2.9</pnml.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>fr.lip6.pnml</groupId>
+			<artifactId>fr.lip6.pnml.framework.coremodel</artifactId>
+			<version>${pnml.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>fr.lip6.pnml</groupId>
+			<artifactId>fr.lip6.pnml.framework.ptnet</artifactId>
+			<version>${pnml.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>fr.lip6.pnml</groupId>
+			<artifactId>fr.lip6.pnml.framework.symmetricnet</artifactId>
+			<version>${pnml.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>fr.lip6.pnml</groupId>
+			<artifactId>fr.lip6.pnml.framework.hlpn</artifactId>
+			<version>${pnml.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>fr.lip6.pnml</groupId>
+			<artifactId>fr.lip6.pnml.framework.pthlpng</artifactId>
+			<version>${pnml.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.2.6</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>20.0</version>
+		</dependency>
+
+        <dependency>
+            <groupId>org.jgrapht</groupId>
+            <artifactId>jgrapht-core</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+
+		<!-- Algorithm dependencies  -->
+		<dependency>
+			<groupId>Spex</groupId>
+			<artifactId>Spex</artifactId>
+			<version>1</version>
+		</dependency>
+		<dependency>
+			<groupId>OpenXES</groupId>
+			<artifactId>OpenXES</artifactId>
+			<version>20160212</version>
+		</dependency>
+		<dependency>
+			<groupId>jsolver</groupId>
+			<artifactId>jsolver</artifactId>
+			<version>1</version>
+		</dependency>
+		<dependency>
+			<groupId>cplex</groupId>
+			<artifactId>cplex</artifactId>
+			<version>1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.choco-solver</groupId>
+			<artifactId>choco-solver</artifactId>
+			<version>4.0.5</version>
+		</dependency>
+
+	</dependencies>
+</project>

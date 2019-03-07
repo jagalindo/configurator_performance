@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+     <lpo id="vipToolLabelledPartialOrder1486047052269" type="http://www.pnml.org/version-2009/grammar/ptnet">
+          <name>
+               <value>lpo1.lpo</value>
+          </name>
+          <event id="Node14860470580843632.1188957771988">
+               <name>
+                    <value>request_received</value>
+                    <graphics>
+                         <offset x="0" y="0"/>
+                    </graphics>
+               </name>
+               <graphics>
+                    <position x="57" y="193"/>
+               </graphics>
+          </event>
+          <event id="Node14860470591163433.8456993508657">
+               <name>
+                    <value>create_offer</value>
+                    <graphics>
+                         <offset x="0" y="0"/>
+                    </graphics>
+               </name>
+               <graphics>
+                    <position x="156" y="196"/>
+               </graphics>
+          </event>
+          <event id="Node14860470603807267.609536339222">
+               <name>
+                    <value>offer_sent</value>
+                    <graphics>
+                         <offset x="0" y="0"/>
+                    </graphics>
+               </name>
+               <graphics>
+                    <position x="253" y="197"/>
+               </graphics>
+          </event>
+          <event id="Node14860470629888936.467161149103">
+               <name>
+                    <value>refusal_received</value>
+                    <graphics>
+                         <offset x="0" y="0"/>
+                    </graphics>
+               </name>
+               <graphics>
+                    <position x="359" y="199"/>
+               </graphics>
+          </event>
+          <lpoArc id="Node1486047069005"
+               source="Node14860470580843632.1188957771988" target="Node14860470591163433.8456993508657">
+               <graphics userDrawn="true"/>
+          </lpoArc>
+          <lpoArc id="Node1486047069604"
+               source="Node14860470591163433.8456993508657" target="Node14860470603807267.609536339222">
+               <graphics userDrawn="true"/>
+          </lpoArc>
+          <lpoArc id="Node1486047070301"
+               source="Node14860470580843632.1188957771988" target="Node14860470603807267.609536339222">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="Node1486047070492"
+               source="Node14860470603807267.609536339222" target="Node14860470629888936.467161149103">
+               <graphics userDrawn="true"/>
+          </lpoArc>
+          <lpoArc id="Node1486047071132"
+               source="Node14860470580843632.1188957771988" target="Node14860470629888936.467161149103">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+          <lpoArc id="Node1486047071133"
+               source="Node14860470591163433.8456993508657" target="Node14860470629888936.467161149103">
+               <graphics userDrawn="false"/>
+          </lpoArc>
+     </lpo>
+</pnml>

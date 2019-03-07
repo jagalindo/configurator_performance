@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and mandatory="true" name="DellLaptops">
+				<description>
+					
+				</description>
+				<alt mandatory="true" name="Category">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="Netbook">
+						<description>
+							
+						</description>
+					</feature>
+					<feature mandatory="true" name="Notebook">
+						<description>
+							
+						</description>
+					</feature>
+				</alt>
+				<alt mandatory="true" name="Processor">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="IntelAtom">
+						<description>
+							price:43
+							frequency:1.6
+							performance:HighN
+						</description>
+					</feature>
+					<feature mandatory="true" name="IntelCeleron">
+						<description>
+							price:61.75
+							frequency:2.2
+							performance:MedN
+						</description>
+					</feature>
+					<feature mandatory="true" name="IntelCore2Duo">
+						<description>
+							price:75
+							frequency:2.0
+							performance:LowN
+						</description>
+					</feature>
+					<feature mandatory="true" name="IntelPentiumDualCore">
+						<description>
+							price:84.99
+							frequency:2.0
+							performance:LowN
+						</description>
+					</feature>
+					<feature mandatory="true" name="IntelCorei3">
+						<description>
+							price:154.70
+							frequency:2.4
+							performance:LowP
+						</description>
+					</feature>
+					<feature mandatory="true" name="IntelCorei5">
+						<description>
+							price:228.99
+							frequency:1.6
+							performance:MedP
+						</description>
+					</feature>
+					<feature mandatory="true" name="IntelCorei7">
+						<description>
+							price:269.99 
+							frequency:1.8
+							performance:HighP
+						</description>
+					</feature>
+				</alt>
+				<alt mandatory="true" name="OperatingSystem">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="Windows10">
+						<description>
+							price:199
+							security:MedP
+						</description>
+					</feature>
+					<feature mandatory="true" name="Windows8">
+						<description>
+							price:150
+							security:MedP
+						</description>
+					</feature>
+					<feature mandatory="true" name="Windows7">
+						<description>
+							price:119.99
+							security:LowP
+						</description>
+					</feature>
+					<feature mandatory="true" name="WindowsXP">
+						<description>
+							price:79,95
+							security:LowP
+						</description>
+					</feature>
+					<feature mandatory="true" name="Ubuntu">
+						<description>
+							security:HighP
+						</description>
+					</feature>
+					<feature mandatory="true" name="OpenSUSE">
+						<description>
+							security:HighP
+						</description>
+					</feature>
+				</alt>
+				<alt name="Drives">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="CD_R">
+						<description>
+							price:9.99
+						</description>
+					</feature>
+					<feature mandatory="true" name="CD_RW">
+						<description>
+							price:16.99
+						</description>
+					</feature>
+					<feature mandatory="true" name="DVD_R">
+						<description>
+							price:28.99
+						</description>
+					</feature>
+					<feature mandatory="true" name="DVD_RW">
+						<description>
+							price:39.99
+						</description>
+					</feature>
+				</alt>
+				<and mandatory="true" name="Monitor">
+					<description>
+						
+					</description>
+					<alt mandatory="true" name="Screen">
+						<description>
+							
+						</description>
+						<feature mandatory="true" name="screen_10_1">
+							<description>
+								price:41.50
+							</description>
+						</feature>
+						<feature mandatory="true" name="screen_12_1">
+							<description>
+								price:78
+							</description>
+						</feature>
+						<feature mandatory="true" name="screen_13_3">
+							<description>
+								price:98
+							</description>
+						</feature>
+						<feature mandatory="true" name="screen_14">
+							<description>
+								price:134
+							</description>
+						</feature>
+						<feature mandatory="true" name="screen_15_6">
+							<description>
+								price:275.4
+							</description>
+						</feature>
+						<feature mandatory="true" name="screen_17">
+							<description>
+								price:280.3
+							</description>
+						</feature>
+					</alt>
+					<alt mandatory="true" name="resolution">
+						<description>
+							
+						</description>
+						<feature mandatory="true" name="a800x600p">
+							<description>
+								
+							</description>
+						</feature>
+						<feature mandatory="true" name="a1024x768p">
+							<description>
+								
+							</description>
+						</feature>
+						<feature mandatory="true" name="a1366x768p">
+							<description>
+								
+							</description>
+						</feature>
+					</alt>
+				</and>
+				<alt mandatory="true" name="Memory">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="a1GB_">
+						<description>
+							price:21.8
+							frequency:533
+							performance:LowP
+						</description>
+					</feature>
+					<feature mandatory="true" name="a2GB_">
+						<description>
+							price:30.47
+							frequency:800
+							performance:LowP
+						</description>
+					</feature>
+					<feature mandatory="true" name="a4GB_">
+						<description>
+							price:37.18
+							frequency:1067
+							performance:MedP
+						</description>
+					</feature>
+					<feature mandatory="true" name="a8GB_">
+						<description>
+							price:57.94
+							frequency:1067
+							performance:HighP
+						</description>
+					</feature>
+				</alt>
+				<alt mandatory="true" name="Harddrive">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="HD_160GB">
+						<description>
+							price:21.22
+							rotation:5400
+							performance:LowP
+						</description>
+					</feature>
+					<feature mandatory="true" name="HD_250GB">
+						<description>
+							price:25.6
+							rotation:7200
+							performance:MedP
+						</description>
+					</feature>
+					<feature mandatory="true" name="HD_320GB">
+						<description>
+							price:39.8
+							rotation:5400
+							performance:MedP
+						</description>
+					</feature>
+					<feature mandatory="true" name="HD_SSD_500GB">
+						<description>
+							price:151.95
+							rotation:7200
+							performance:HighP
+						</description>
+					</feature>
+					<feature mandatory="true" name="HD_1TB">
+						<description>
+							price:45.95
+							rotation:5400
+							performance:MedP
+						</description>
+					</feature>
+				</alt>
+				<alt name="VideoCard">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="a256MB">
+						<description>
+							price:61.58
+							performance:LowP
+						</description>
+					</feature>
+					<feature mandatory="true" name="a512MB">
+						<description>
+							price:72
+							performance:LowP
+						</description>
+					</feature>
+					<feature mandatory="true" name="a1GB">
+						<description>
+							price:150
+							performance:MedP
+						</description>
+					</feature>
+					<feature mandatory="true" name="a2GB">
+						<description>
+							price:239.4
+							performance:HighP
+						</description>
+					</feature>
+					<feature mandatory="true" name="a4GB">
+						<description>
+							price:378.6
+							performance:HighP
+						</description>
+					</feature>
+				</alt>
+				<alt mandatory="true" name="Wireless">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="DellWireless1397802_11g">
+						<description>
+							price:15
+						</description>
+					</feature>
+					<feature mandatory="true" name="DellWireless1510802_11n">
+						<description>
+							price:20
+						</description>
+					</feature>
+					<feature mandatory="true" name="IntelWiFiLink5100802_11agn">
+						<description>
+							price:25
+						</description>
+					</feature>
+				</alt>
+				<alt mandatory="true" name="Battery">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="a28WHrLithium_IonBattery_3_cell">
+						<description>
+							price:71.35
+							performance:LowN
+						</description>
+					</feature>
+					<feature mandatory="true" name="a37WhrLithiumIonBattery_4cell">
+						<description>
+							price:82.44
+							performance:LowP
+						</description>
+					</feature>
+					<feature mandatory="true" name="a56WHrLithiumIonBattery_6cell">
+						<description>
+							price:99.89
+							performance:MedP
+						</description>
+					</feature>
+					<feature mandatory="true" name="a85WHrLithiumIonBattery_9cell">
+						<description>
+							price:116.99
+							performance:HighP
+						</description>
+					</feature>
+				</alt>
+				<and mandatory="true" name="Warranty">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="warranty_1Year">
+						<description>
+							security:LowP
+						</description>
+					</feature>
+					<alt name="Additional_Warranty">
+						<description>
+							
+						</description>
+						<feature mandatory="true" name="add_1Year">
+							<description>
+								price:52
+								security:MedP
+							</description>
+						</feature>
+						<feature mandatory="true" name="add_2Years">
+							<description>
+								price:62
+								security:MedP
+							</description>
+						</feature>
+						<feature mandatory="true" name="add_3Years">
+							<description>
+								price:79
+								security:HighP
+							</description>
+						</feature>
+					</alt>
+				</and>
+			</and>
+		</struct>
+		<constraints>
+			<rule>
+				<imp>
+					<var>Netbook</var>
+					<disj>
+						<var>IntelAtom</var>
+						<var>IntelCeleron</var>
+					</disj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>Netbook</var>
+					<conj>
+						<not>
+							<var>Drives</var>
+						</not>
+						<not>
+							<var>VideoCard</var>
+						</not>
+					</conj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>Netbook</var>
+					<disj>
+						<var>screen_10_1</var>
+						<var>screen_12_1</var>
+					</disj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>Netbook</var>
+					<disj>
+						<var>a28WHrLithium_IonBattery_3_cell</var>
+						<var>a37WhrLithiumIonBattery_4cell</var>
+					</disj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>Notebook</var>
+					<disj>
+						<var>IntelCeleron</var>
+						<disj>
+							<var>IntelCore2Duo</var>
+							<disj>
+								<var>IntelCorei3</var>
+								<disj>
+									<var>IntelCorei5</var>
+									<disj>
+										<var>IntelCorei7</var>
+										<var>IntelPentiumDualCore</var>
+									</disj>
+								</disj>
+							</disj>
+						</disj>
+					</disj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>Notebook</var>
+					<disj>
+						<var>screen_13_3</var>
+						<disj>
+							<var>screen_14</var>
+							<disj>
+								<var>screen_15_6</var>
+								<var>screen_17</var>
+							</disj>
+						</disj>
+					</disj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>Notebook</var>
+					<disj>
+						<var>a37WhrLithiumIonBattery_4cell</var>
+						<disj>
+							<var>a56WHrLithiumIonBattery_6cell</var>
+							<var>a85WHrLithiumIonBattery_9cell</var>
+						</disj>
+					</disj>
+				</imp>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
